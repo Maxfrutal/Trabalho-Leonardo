@@ -21,10 +21,10 @@ public class Compra {
         compra = new CompraModel();
         
         Scanner dados = new Scanner (System.in);
-        System.out.print("Informe o valor da compra: ");
+        System.out.print("Digite o valor da compra: ");
         compra.setValor(dados.nextInt());
         
-        System.out.print("Informe a idade: ");
+        System.out.print("Especifica a idade: ");
         compra.setIdade(dados.nextInt());
         
         desc = new Calculo();
@@ -32,8 +32,9 @@ public class Compra {
         compra.setTotal(desc.calculartotal (compra.getValor(), compra.getDesconto()));
         
         
-        System.out.println("Valor do desconto: " + compra.getDesconto());
-        System.out.println("Valor a pagar:   " + compra.getTotal());
+        System.out.println("Calculo do desconto: " + compra.getDesconto());
+        System.out.println("Quantidade a pagar:   " + compra.getTotal());
+        System.out.println("Finalização do projeto VERSÃO 2.0!!!   " );
         
         
         
